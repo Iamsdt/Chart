@@ -1,0 +1,18 @@
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="false"
+          android:drawable="@android:color/transparent"/>
+    <item android:state_pressed="false"
+          android:drawable="@android:color/transparent"/> <!-- pressed -->
+
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <corners android:radius="16dp"/>
+            <solid android:color="@color/light_green_500"/>
+            <stroke android:color="@color/grey_900"
+                    android:width="2dp"/>
+        </shape>
+    </item> <!-- pressed -->
+
+    <item android:state_enabled="true"
+          android:drawable="@android:color/transparent"/> <!-- idle state -->
+</selector>
